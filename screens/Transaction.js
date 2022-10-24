@@ -11,9 +11,7 @@ import {
 import * as Permissions from "expo-permissions";
 import { BarCodeScanner } from "expo-barcode-scanner";
 
-const bgImage = require("../assets/background2.png");
-const appIcon = require("../assets/appIcon.png");
-const appName = require("../assets/appName.png");
+
 
 export default class TransactionScreen extends Component {
   constructor(props) {
@@ -81,11 +79,11 @@ export default class TransactionScreen extends Component {
                 style={styles.textinput}
                 placeholder={"ID do Livro"}
                 placeholderTextColor={"#FFFFFF"}
-                value={bookId}
+                //
               />
               <TouchableOpacity
                 style={styles.scanbutton}
-                onPress={() => this.getCameraPermissions("bookId")}
+                //onPress
               >
                 <Text style={styles.scanbuttonText}>Digitalizar</Text>
               </TouchableOpacity>
@@ -95,11 +93,11 @@ export default class TransactionScreen extends Component {
                 style={styles.textinput}
                 placeholder={"ID do Estudante"}
                 placeholderTextColor={"#FFFFFF"}
-                value={studentId}
+                //
               />
               <TouchableOpacity
                 style={styles.scanbutton}
-                onPress={() => this.getCameraPermissions("studentId")}
+               // onPress
               >
                 <Text style={styles.scanbuttonText}>Digitalizar</Text>
               </TouchableOpacity>
